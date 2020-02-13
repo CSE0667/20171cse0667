@@ -1,0 +1,19 @@
+
+	body{
+		background-image:url("/home/Sem6B10/Desktop/flower.jpg");
+	background-repeat:repeat;
+	background-attachment:scroll;
+	
+	background-color:pink;
+	}
+	h1{
+	color:white;
+	margin-left:60px;
+	}
+	p{
+	color:white;
+	margin-left:60px;
+	}
+	
+	
+  
