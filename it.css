@@ -6,7 +6,7 @@ body	{
 	h3::first-letter{color:#ff0000;font-variant:xx-large;}
 	::selection{color:red;background:yellow;}
 
-	div.a{background-image:url("/home/Sem6B10/Desktop/shadow.jpeg/");
+	div.a{background-image:url("/home/Sem6B10/Desktop/shadow.jpeg");
 		padding:100px;
 		border:7px solid black;}
 	div.b{
@@ -16,9 +16,34 @@ body	{
 	opacity:0.5;
 	}
 	
-	#grad{background-image:linear-gradient(red,yellow);}
+	#grad{background-image:radial-gradient(red,yellow);}
 
-	#grad1{background-image:linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));}
+	#grad1{background-image:linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,5));}
 
 	#grad2{background-image:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);}
-	#grad3{background-image:repeating-linear-gradient(red,yellow 10%,green 20%);}
+	#grad3{background-image:repeating-radial-gradient(red,yellow 10%,green 20%);}
+
+	
+	div.v{
+	width:100px;
+	height:100px;
+	border-radius:8px;
+	background:red;
+	transition:width 2s,height 4s,transform 2s;}
+	div.v:hover{
+	width:300px;
+	height:300px;
+	transform:rotate(180deg);}
+	
+	div.s{
+	width:100px;
+	height:100px;
+	border-radius:8px;
+	background-color:red;
+	animation-name:example;
+	animation-duration:4s;}
+	@keyframes example{
+	from{background-color:red;}
+	to{background-color:yellow;}
+	}
+
